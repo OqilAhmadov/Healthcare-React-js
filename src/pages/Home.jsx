@@ -13,9 +13,17 @@ import Mockup from "../assets/images/Mockup.png";
 import GoogleStore from "../assets/images/Store=Google Play.svg";
 import AppStore from "../assets/images/Store=App.svg";
 import youngWomen from '../assets/images/Ywomen.png';
+import healthLogo from '../assets/images/healthcarelogo.svg';
+import facebook from '../assets/images/Facebook (1).svg';
+import instagram from '../assets/images/Instagram.svg';
+import twitter from '../assets/images/Twitter.svg';
+import youtube from '../assets/images/Youtube.svg';
 
 
-function Home() {
+const categoryList = ["Home", "About", "Services", "Reviews", "Article"];
+const aboutList = ["Partners", "Careers", "Press", "Community"];
+
+function Home(props) {
     const [cards, setCards] = React.useState([]);
     const [serviceItems, setserviceItems] = React.useState([]);
     const [doctorsCard, setDoctorsCard] = React.useState([]);
@@ -157,40 +165,54 @@ function Home() {
             <footer>
                 <div className="footerTop">
                     <div className="footerTop__address">
-                        <img src="" alt="" />
+                        <img src={healthLogo} alt="healthLogo" />
                         <div className="footerTop__address-street">
-
+                        Metairie, 3689  Bassel Street, LA, Louisiana
                         </div>
                         <div className="footerTop__address-contact">
-
+                        Contact us: 225-788-5489
                         </div>
                         <div className="footerTop__address-icons">
-                            <a href="#ee"><img src="" alt="" /></a>
-                            <a href="#ee"><img src="" alt="" /></a>
-                            <a href="#ee"><img src="" alt="" /></a>
-                            <a href="#ee"><img src="" alt="" /></a>
+                            <a href="#ee"><img src={facebook} alt="facebook" /></a>
+                            <a href="#ee"><img src={instagram} alt="instagram" /></a>
+                            <a href="#ee"><img src={twitter} alt="twitter" /></a>
+                            <a href="#ee"><img src={youtube} alt="youtube" /></a>
                         </div>
                     </div>
                     <div className="footerTop__sections">
                         <ul className="footerTop__sections-category">
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
+                            <li><a href="##"><h3>Category</h3></a></li>
+
+                            {
+                                categoryList.map((obj) => (
+                                    <li><a href="##">{obj}</a></li>
+                                ))
+                            }
                         </ul>
-                        <ul className="footerTop__sections-about">
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
+                        <ul className="footerTop__sections-category">
+                            <li><a href="##"><h3>About</h3></a></li>
+                            {
+                                aboutList.map((obj) => (
+                                    <li><a href="##">{obj}</a></li>
+                                ))
+                            }
                         </ul>
                         <div className="footerTop__signup">
-                            <h3></h3>
-                            <p></p>
-                            <Input grey border placeholder="Enter your email" />
+                            <h3>Subscribe newsletter</h3>
+                            <p>Sign up for tips, new destinations, and exclusive promos.</p>
+                            <Input border placeholder="Enter your email" />
+                            <Button primary text="Subcribe" />
                         </div>
                     </div>
+                </div>
+                <hr />
+                <div className="footerBottom">
+                    <h3>© 2021 Healthcare - All rights reserved.</h3>
+                    <ul>
+                        <li><a href="###">Privacy</a></li>
+                        <li><a href="###">Security</a></li>
+                        <li><a href="###">Terms</a></li>
+                    </ul>
                 </div>
             </footer>
         </>

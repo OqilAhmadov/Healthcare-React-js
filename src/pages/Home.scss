@@ -228,14 +228,137 @@
         color: #FFFFFF;
         margin-bottom: 21px;
       }
-      
+
 
     }
 
     img {
       position: absolute;
-      top: -132px;
+      top: -110px;
       right: -90px;
+    }
+  }
+
+}
+
+footer {
+
+  .footerTop {
+    display: flex;
+    justify-content: space-around;
+    padding: 45px 0 30px;
+
+    .footerTop__address {
+
+      .footerTop__address-street {
+        font-family: "DM Sans";
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 180%;
+        color: #646464;
+      }
+
+      .footerTop__address-contact {
+        font-family: "DM Sans";
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 180%;
+        color: #646464;
+        margin: 16px 0;
+      }
+
+      .footerTop__address-icons {
+        display: flex;
+        column-gap: 16px;
+      }
+    }
+
+    .footerTop__sections {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 114px;
+
+      .footerTop__sections-category {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+
+        li {
+          a {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 14px;
+            color: #646464;
+
+            &:hover {
+              color: #0f0f0f;
+            }
+          }
+        }
+      }
+
+
+    }
+
+    .footerTop__signup {
+      h3 {
+        font-family: "DM Sans";
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 16px;
+        color: #323232;
+      }
+
+      p {
+        max-width: 277px;
+        font-family: "DM Sans";
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 180%;
+        color: #646464;
+        margin: 19px 0 15px;
+
+      }
+    }
+  }
+
+  .footerBottom {
+    display: flex;
+    justify-content: space-around;
+    padding: 26px 0;
+    background: #E5E5E5;
+
+    h3 {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 14px;
+      color: #646464;
+
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      column-gap: 54px;
+
+      li {
+        a {
+          font-family: "DM Sans";
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 14px;
+          color: #646464;
+
+          &:hover {
+            color: #202020;
+          }
+
+        }
+      }
     }
   }
 

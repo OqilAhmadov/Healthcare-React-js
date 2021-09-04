@@ -9,6 +9,7 @@ import female from "../../assets/images/healthback.jpg";
 import LocationIcon from "../../assets/images/locationIcon.svg";
 
 
+
 function index() {
     const countryMap = ["New York, USA", "Los Angeles, USA", "Tashkent, UZB", "Moscow, RUSSIA", "Mexico, MEXICO", "Istanbul, TURKEY", "Dubay, BAA"]
 
@@ -20,9 +21,6 @@ function index() {
                     Your <span>Suitable Doctor’s</span></h2>
                 <p className="header__content-search-about">Join us and take care of yourself and your family with health services that will make you feel confident and safe in your daily life.</p>
                 <div className="header__content-search-section">
-                    {/* <div className="input-one">
-                        <input type="text" placeholder="Find your doctor" />
-                    </div> */}
                     <Input grey placeholder="Find your doctor..." />
                     <div className="input-one">
                         <img src={LocationIcon} alt="LocationIcon" />

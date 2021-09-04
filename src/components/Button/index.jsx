@@ -1,16 +1,19 @@
 import React from 'react'
 import styled from 'styled-components';
 
-const StyledButton  = styled.button`
+const StyledButton = styled.button`
+    width: 240px;
     background: ${(props) => props.primary ? '#40A3F8' : 'white'};
-    color: ${(props) => props.primary ? 'white' : '#40A3F8'};
-    display: flex;
+    color: ${(props) => props.primary ? 'white' : '#40A3F8'};   
+     display: flex;
     align-items: center;
+    justify-content: center;
     font-family: "Poppins";
     font-weight: 500;
     font-size: 14.997px;
     line-height: 22px;
-    margin: 15px 0;
+    text-align: center;
+    margin: 15px 12px;
     padding: 8px 28px 8px !important;
     border-radius: 5px;
     opacity: 1 !important;  
@@ -19,6 +22,7 @@ const StyledButton  = styled.button`
 
     &:hover {
       background: #0f85ec;
+      color: ${(props) => props.primary ? '#000' : 'white'};   
       transition: 0.3s;
       cursor: pointer;
     }
